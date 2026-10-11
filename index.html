@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="sand">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أوجز السير لخير البشر ﷺ | ابن فارس</title>
+<meta name="description" content="عرض بديع لكتاب أوجز السير لخير البشر لابن فارس: نسب النبي ﷺ ومولده ونشأته وبعثته وهجرته وغزواته ووفاته">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fs:19px;
+  --radius:20px;
+  --shadow:0 10px 30px rgba(0,0,0,.10);
+}
+html[data-theme="sand"]{
+  --bg:#faf6ee; --bg2:#fffdf7; --card:#ffffff; --ink:#2b2419; --muted:#7a6c55;
+  --gold:#b8862e; --gold2:#e9c46a; --accent:#0f6e5a; --accent2:#e8f5ee;
+  --line:#e8ddc3; --chip:#fff6df; --hero1:#0f6e5a; --hero2:#b8862e;
+  --pattern-opacity:.07;
+}
+html[data-theme="emerald"]{
+  --bg:#eef7f1; --bg2:#f7fdf9; --card:#ffffff; --ink:#14291f; --muted:#5a7266;
+  --gold:#0f766e; --gold2:#34d399; --accent:#0f766e; --accent2:#dcfce7;
+  --line:#c7e7d6; --chip:#e0f5e9; --hero1:#065f46; --hero2:#0d9488;
+  --pattern-opacity:.08;
+}
+html[data-theme="night"]{
+  --bg:#eef2ff; --bg2:#f8faff; --card:#ffffff; --ink:#1e2450; --muted:#67709a;
+  --gold:#4f46e5; --gold2:#93c5fd; --accent:#1e40af; --accent2:#dbeafe;
+  --line:#d2d8f8; --chip:#e9edff; --hero1:#1e1b4b; --hero2:#4f46e5;
+  --pattern-opacity:.08;
+}
+html[data-theme="dark"]{
+  --bg:#12100c; --bg2:#1a1712; --card:#1f1b14; --ink:#f3ead6; --muted:#b8ab8d;
+  --gold:#e9c46a; --gold2:#b8862e; --accent:#2dd4bf; --accent2:#14332c;
+  --line:#3a3325; --chip:#2a251a; --hero1:#0b2e27; --hero2:#6b4e12;
+  --pattern-opacity:.12; --shadow:0 10px 30px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:"Amiri","Traditional Arabic",serif;
+  font-size:var(--fs); line-height:2.05; color:var(--ink); background:var(--bg);
+  transition:background .4s,color .4s;
+}
+a{color:inherit}
+.top-progress{position:fixed;top:0;right:0;left:0;height:5px;background:transparent;z-index:100}
+.top-progress span{display:block;height:100%;width:0;background:linear-gradient(-90deg,var(--gold2),var(--gold),var(--accent));}
+header.sticky{
+  position:sticky;top:0;z-index:50;
+  background:color-mix(in srgb, var(--bg2) 88%, transparent);
+  backdrop-filter:blur(12px); border-bottom:1px solid var(--line);
+}
+.wrap{max-width:1080px;margin:auto;padding:0 18px}
+.bar{display:flex;align-items:center;gap:12px;padding:12px 0;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{
+  width:48px;height:48px;border-radius:16px;display:grid;place-items:center;color:#fff;font-weight:700;
+  background:linear-gradient(135deg,var(--hero1),var(--hero2));box-shadow:var(--shadow);font-family:"Aref Ruqaa",serif;font-size:26px
+}
+.logo b{font-family:"Aref Ruqaa",serif;font-size:1.15rem;display:block;line-height:1.3}
+.logo small{color:var(--muted);font-size:.85rem}
+.controls{margin-inline-start:auto;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.btn{
+  border:1px solid var(--line);background:var(--card);color:var(--ink);
+  border-radius:999px;padding:7px 14px;font-family:inherit;font-size:.95rem;cursor:pointer;
+  display:inline-flex;align-items:center;gap:7px;transition:.25s;
+}
+.btn:hover{transform:translateY(-1px);border-color:var(--gold);box-shadow:var(--shadow)}
+.btn.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#fff;border:none;font-weight:700}
+.icon-btn{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:var(--card);cursor:pointer;font-size:1.1rem}
+.theme-dots{display:flex;gap:6px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 10px}
+.dot{width:26px;height:26px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);cursor:pointer}
+.dot.active{box-shadow:0 0 0 2px var(--gold)}
+.hero{
+  position:relative;overflow:hidden;color:#fff;border-radius:28px;margin:18px auto;
+  background:linear-gradient(135deg,var(--hero1) 0%, #0a3d34 45%, var(--hero2) 130%);
+  padding:52px 28px 40px;text-align:center;box-shadow:var(--shadow)
+}
+html[data-theme="dark"] .hero{background:linear-gradient(135deg,#0b2e27,#1a1408 70%,#3a2a08)}
+html[data-theme="night"] .hero{background:linear-gradient(135deg,#1e1b4b,#1e40af 60%,#6d28d9)}
+.hero::before{
+  content:"";position:absolute;inset:0;opacity:.16;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='white' stroke-width='1.2'%3E%3Cpath d='M60 8 72 48 112 60 72 72 60 112 48 72 8 60 48 48Z'/%3E%3Ccircle cx='60' cy='60' r='10'/%3E%3C/g%3E%3C/svg%3E");
+}
+.hero>*{position:relative}
+.basmala{font-family:"Aref Ruqaa",serif;font-size:1.6rem;color:#ffe9a8}
+.hero h1{font-family:"Aref Ruqaa",serif;font-size:clamp(2rem,5vw,3.3rem);margin:10px 0 6px;line-height:1.5}
+.hero p{max-width:760px;margin:8px auto;color:#f5f0dd;font-size:1.12rem}
+.hero-meta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.pill{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px);border-radius:999px;padding:6px 16px;font-size:.95rem}
+.searchbox{max-width:640px;margin:18px auto 0;display:flex;background:#fff;border-radius:999px;padding:6px;gap:6px}
+.searchbox input{flex:1;border:none;outline:none;font-family:inherit;font-size:1.05rem;padding:8px 16px;background:transparent;color:#222}
+.searchbox button{border:none;border-radius:999px;padding:8px 22px;background:#111;color:#fff;font-family:inherit;cursor:pointer}
+.layout{display:grid;grid-template-columns:280px 1fr;gap:22px;align-items:start;padding-bottom:60px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}}
+.toc{position:sticky;top:82px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
+.toc h3{margin:0 0 10px;font-family:"Aref Ruqaa",serif;color:var(--gold)}
+.toc a{display:flex;gap:8px;align-items:center;text-decoration:none;padding:8px 10px;border-radius:12px;font-size:1rem;line-height:1.7}
+.toc a:hover{background:var(--chip)}
+.toc a.active{background:var(--accent2);border:1px solid var(--line);font-weight:700}
+.toc .num{background:var(--chip);border:1px solid var(--line);min-width:30px;height:30px;border-radius:10px;display:grid;place-items:center;font-size:.9rem}
+section.card{
+  background:var(--card);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);
+  padding:0;margin:0 0 20px;overflow:hidden;scroll-margin-top:90px;opacity:0;transform:translateY(18px);transition:.6s;
+}
+section.card.visible{opacity:1;transform:none}
+.card-head{display:flex;gap:14px;align-items:center;padding:20px 22px 14px;border-bottom:2px dashed var(--line);background:linear-gradient(180deg,var(--chip),transparent)}
+.card-ico{width:58px;height:58px;flex:0 0 58px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#fff}
+.card-ico svg{width:30px;height:30px}
+.card-head h2{margin:0;font-family:"Aref Ruqaa",serif;font-size:1.55rem;line-height:1.6}
+.card-head .sub{color:var(--muted);font-size:.92rem;margin:0}
+.card-actions{margin-inline-start:auto;display:flex;gap:7px}
+.mini{width:38px;height:38px;border-radius:12px;border:1px solid var(--line);background:var(--bg2);cursor:pointer;display:grid;place-items:center;font-size:1.05rem;transition:.2s}
+.mini:hover{border-color:var(--gold);transform:scale(1.06)}
+.card-body{padding:8px 24px 22px}
+.card-body p{margin:12px 0;text-align:justify}
+.quote{background:var(--accent2);border:1px solid var(--line);border-inline-start:5px solid var(--gold);border-radius:16px;padding:14px 18px;margin:14px 0}
+.orn{display:flex;align-items:center;gap:12px;color:var(--gold);justify-content:center;margin:6px 0}
+.orn::before,.orn::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+ul.clean{list-style:none;padding:0;margin:10px 0}
+ul.clean li{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:10px 14px;margin:8px 0;display:flex;gap:10px;align-items:flex-start}
+.badge{background:var(--gold);color:#fff;min-width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-weight:700;flex:0 0 32px}
+.nasab{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.nasab span{background:var(--chip);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;font-weight:700;white-space:nowrap}
+.nasab i{color:var(--gold);align-self:center}
+.timeline{position:relative;margin:14px 6px 6px;padding-inline-start:26px;border-inline-start:3px dotted var(--gold)}
+.t-item{position:relative;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:12px 16px;margin:0 0 12px}
+.t-item::before{content:"";position:absolute;inset-inline-start:-36px;top:16px;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px var(--chip)}
+.t-item h4{margin:0 0 4px;font-size:1.1rem}
+.t-item p{margin:4px 0;font-size:1rem;color:var(--ink)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}}
+.kv{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.kv b{color:var(--gold)}
+.aya{text-align:center;font-size:1.2rem;background:linear-gradient(180deg,var(--chip),transparent);border:1px solid var(--line);border-radius:16px;padding:14px}
+.footer{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;text-align:center;color:var(--muted)}
+.fab{position:fixed;bottom:20px;inset-inline-start:20px;display:flex;flex-direction:column;gap:10px;z-index:60}
+.fab button{width:50px;height:50px;border-radius:50%;border:none;cursor:pointer;font-size:1.3rem;box-shadow:var(--shadow);background:var(--ink);color:var(--bg)}
+.toast{position:fixed;bottom:24px;right:50%;transform:translateX(50%);background:#111;color:#fff;padding:10px 22px;border-radius:999px;opacity:0;transition:.3s;z-index:99;font-size:1rem}
+.toast.show{opacity:1}
+mark{background:var(--gold2);border-radius:4px;padding:0 4px}
+.hidden{display:none!important}
+.img-deco{border-radius:18px;overflow:hidden;border:1px solid var(--line);margin:12px 0;background:linear-gradient(135deg,var(--accent2),var(--chip));padding:18px;display:flex;gap:14px;align-items:center}
+.img-deco svg{flex:0 0 72px}
+@media print{.controls,.toc,.fab,.top-progress,.card-actions,.searchbox{display:none!important}body{background:#fff}.layout{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top-progress"><span id="progress"></span></div>
+<header class="sticky">
+<div class="wrap bar">
+  <div class="logo"><div class="logo-mark">م</div><div><b>أوجز السير لخير البشر ﷺ</b><small>للإمام ابن فارس • عرض موثّق ميسّر</small></div></div>
+  <div class="controls">
+    <div class="theme-dots" title="لون الثيم">
+      <span style="font-size:.85rem;color:var(--muted)">الثيم:</span>
+      <span class="dot active" data-set-theme="sand" style="background:#e9c46a" title="رملي ذهبي"></span>
+      <span class="dot" data-set-theme="emerald" style="background:#0f766e" title="زمردي"></span>
+      <span class="dot" data-set-theme="night" style="background:#4f46e5" title="أزرق"></span>
+      <span class="dot" data-set-theme="dark" style="background:#222" title="داكن"></span>
+    </div>
+    <button class="btn" id="fontMinus" title="تصغير الخط">أ−</button>
+    <button class="btn" id="fontPlus" title="تكبير الخط">أ+</button>
+    <button class="btn" id="resetFont">افتراضي</button>
+  </div>
+</div>
+</header>
+
+<div class="wrap">
+<div class="hero">
+  <div class="basmala">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+  <h1>أوجز السير لخير البشر ﷺ</h1>
+  <p>مختصر نفيس للإمام أحمد بن فارس يروي نسب النبي ﷺ ومولده ونشأته وزواجه وبعثته وهجرته وغزواته ووفاته — هنا تقرؤه في لوحات واضحة، بخط أميري جميل، مع مشاركة كل فائدة.</p>
+  <div class="hero-meta">
+    <span class="pill">📜 ١٦ لوحة معرفية</span>
+    <span class="pill">⚔️ ١٩ غزوة موثقة</span>
+    <span class="pill">🌙 من المولد إلى الوفاة</span>
+  </div>
+  <div class="searchbox"><input id="search" placeholder="ابحث في السيرة… مثال: بدر، خديجة، الهجرة"><button onclick="doSearch()">بحث</button></div>
+</div>
+
+<div class="layout">
+<nav class="toc" id="toc">
+<h3>❖ فهرس السيرة</h3>
+<div id="tocLinks"></div>
+<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+<button class="btn gold" onclick="sharePage()">مشاركة الموقع</button>
+<button class="btn" onclick="window.print()">🖨 طباعة</button>
+</div>
+</nav>
+
+<main id="main">
+
+<!-- 1 -->
+<section class="card" id="s-muqaddima" data-title="مقدمة المؤلف">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.5 5.5L20 9.5l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1z"/></svg></div>
+<div><h2>مقدمة المؤلف</h2><p class="sub">لماذا نحفظ سيرة النبي ﷺ؟</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-muqaddima')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-muqaddima')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<div class="quote">هذا ذكر ما يحق على المرء المسلم حفظه، ويجب على ذي الدين معرفته: من نسب رسول الله ﷺ ومولده ومنشئه ومبعثه، وذكر أحواله في مغازيه، ومعرفة أسماء ولده وعُمُره وأزواجه. فإن للعارف بذلك رتبة تعلو على رتبة من جهله، كما أن للعلم به حلاوة في الصدر.</div>
+<p>ولم تُعمَّر مجالس الخير بعد كتاب الله عز وجل بأحسن من أخبار رسول الله ﷺ. وقد أثبتنا في مختصرنا هذا من ذلك ذكرًا، والله نستهديه التوفيق، وإياه نسأل الصلاة على زين المرسلين وسيد العالمين وخاتم النبيين وإمام المتقين.</p>
+<div class="orn">۞ ۞ ۞</div>
+<p style="color:var(--muted);font-size:.95em">المصدر: مخطوط «أوجز السير لخير البشر» لابن فارس — عن المكتبة الشاملة.</p>
+</div></section>
+
+<!-- 2 -->
+<section class="card" id="s-nasab" data-title="نسبه ومولده ﷺ">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="5" r="2.5"/><circle cx="6" cy="13" r="2.5"/><circle cx="18" cy="13" r="2.5"/><circle cx="12" cy="20" r="2"/><path d="M12 7.5v3M7 15.5l3 2M17 15.5l-3 2"/></svg></div>
+<div><h2>نسبه ومولده ﷺ</h2><p class="sub">النسب الشريف المتفق عليه إلى عدنان</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-nasab')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-nasab')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<div class="img-deco"><svg viewBox="0 0 100 100" width="72" height="72"><g fill="none" stroke="#b8862e" stroke-width="2"><circle cx="50" cy="50" r="40"/><circle cx="50" cy="50" r="28"/><path d="M50 10v80M10 50h80"/></g><text x="50" y="58" text-anchor="middle" font-size="22">ﷺ</text></svg>
+<div><b>أبو القاسم محمد ﷺ</b><br><span style="color:var(--muted)">كنيته الشريفة: أبو القاسم، بكر أبنائه القاسم.</span></div></div>
+<p><b>نسبه الشريف:</b> محمد بن عبد الله بن عبد المطلب بن هاشم بن عبد مناف بن قصي بن كلاب بن مرة بن كعب بن لؤي بن غالب بن فهر بن مالك بن النضر بن كنانة بن خزيمة بن مدركة بن إلياس بن مضر بن نزار بن معد بن عدنان — <b>إلى هنا إجماع الأئمة.</b></p>
+<div class="nasab" id="nasabTree"></div>
+<div class="quote">قال ابن فارس: إلى عدنان إجماع الأئمة، وما فوق عدنان فمختلف فيه.</div>
+</div></section>
+
+<!-- 3 -->
+<section class="card" id="s-tufuula" data-title="طفولته وشبابه ﷺ">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg></div>
+<div><h2>طفولته وشبابه ﷺ</h2><p class="sub">اليتم والحفظ الإلهي ورحلة الشام</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-tufuula')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-tufuula')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<ul class="clean">
+<li><span class="badge">٦</span><span><b>وفاة أمه:</b> لما أتت له ست سنين ماتت أمه آمنة في مرجعها من المدينة <b>بالأبواء</b>، فيُتِّم في حجر جده عبد المطلب.</span></li>
+<li><span class="badge">٨</span><span><b>وفاة جده:</b> لما أتت له ثمان سنين وشهران وعشرة أيام توفي جده عبد المطلب، فوليه عمه <b>أبو طالب</b> — وكان أخا عبد الله لأمه وأبيه.</span></li>
+<li><span class="badge">١٢</span><span><b>رحلة الشام:</b> لما بلغ اثنتي عشرة سنة وشهران وعشرة أيام ارتحل به أبو طالب تاجرًا إلى الشام، فنزل <b>تيماء</b>، فرآه حبر من أحبار يهود يقال إنه <b>بحيرا الراهب</b> فقال لأبي طالب: من هذا الغلام؟ قال: هو ابن أخي. قال: أشفيق أنت عليه؟ قال: نعم. قال: فوالله لئن قدمت به الشام ليقتلنه اليهود، إنه عدو لهم — <b>فرجع به إلى مكة</b>، وشبّ رسول الله ﷺ محفوظًا.</span></li>
+<li><span class="badge">٣٥</span><span><b>بنيان الكعبة:</b> لما بلغ خمسًا وثلاثين سنة شهد بنيان الكعبة، وتراضت قريش بحكمه فيها — فوضع الحجر بيده الشريفة.</span></li>
+</ul>
+</div></section>
+
+<!-- 4 -->
+<section class="card" id="s-zawaj" data-title="زواجه بخديجة رضي الله عنها">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16"/></svg></div>
+<div><h2>زواجه بخديجة رضي الله عنها</h2><p class="sub">خطبة أبي طالب البليغة</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-zawaj')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-zawaj')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<p>فلما أتت له <b>خمس وعشرون سنة وشهران وعشرة أيام</b> خطب خديجة لنفسه، فحضر أبو طالب ومعه بنو هاشم ورؤساء سائر مضر.</p>
+<div class="quote"><b>خطبة أبي طالب:</b> «الحمد لله الذي جعلنا من ذرية إبراهيم وزرع إسماعيل وضئضئ معد وعنصر مضر، وجعلنا حضنة بيته وسُوّاس حرمه، وجعل لنا بيتًا محجوجًا وحرمًا آمنًا، وجعلنا الحكام على الناس. ثم إن ابن أخي هذا محمد بن عبد الله لا يُوزن به رجل إلا رجح به، وإن كان في المال قِلّ فإن المال ظل زائل وأمر حائل. ومحمد من قد عرفتم قرابته، وقد خطب خديجة بنت خويلد وبذل لها من الصداق ما آجله وعاجله من مالي، وهو والله بعد هذا له نبأ عظيم وخطر جليل» — <b>فتزوجها، فبقيت عنده قبل الوحي خمس عشرة سنة.</b> وماتت ولرسول الله ﷺ تسع وأربعون سنة وثمانية أشهر.</div>
+</div></section>
+
+<!-- 5 -->
+<section class="card" id="s-awlad" data-title="أولاده ﷺ">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 11a3 3 0 106 0 3 3 0 00-6 0zM3 20c0-3 3-5 6-5h6c3 0 6 2 6 5"/></svg></div>
+<div><h2>أولاده ﷺ</h2><p class="sub">ستة من خديجة وإبراهيم من مارية</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-awlad')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-awlad')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<p>فأما ولده منها <b>فستة:</b></p>
+<ul class="clean">
+<li><span class="badge">١</span><span><b>القاسم</b> — وبه يُكنّى ﷺ (أبو القاسم).</span></li>
+<li><span class="badge">٢</span><span><b>الطاهر</b> — ويقال إن اسمه عبد الله.</span></li>
+<li><span class="badge">٣</span><span><b>زينب</b> — تزوجها أبو العاص بن الربيع.</span></li>
+<li><span class="badge">٤</span><span><b>رقية</b> — تزوجها عثمان رضي الله عنه.</span></li>
+<li><span class="badge">٥</span><span><b>أم كلثوم</b> — تزوجها عثمان بعد رقية.</span></li>
+<li><span class="badge">٦</span><span><b>فاطمة</b> — تزوجها علي رضي الله عنه. (نبّه الناسخ: الصواب أنها أصغر ولده من خديجة كما ذكر ابن هشام).</span></li>
+</ul>
+<p>وأما <b>إبراهيم</b> فإنه من <b>مارية</b> القبطية. وأما الغلمة الثلاثة فماتوا وهم يرضعون، ويقال بلغ ابنه القاسم أن يركب الدابة ويسير على النجيبة.</p>
+<div class="quote">وأما البنات: فتزوج عليٌّ فاطمة، وتزوج أبو العاص زينب، وتزوج عثمان أم كلثوم فماتت فزوّجه رسول الله ﷺ رقية.</div>
+</div></section>
+
+<!-- 6 -->
+<section class="card" id="s-azwaj" data-title="أزواجه ﷺ">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c-4 3-8 6-8 11a5 5 0 009 3 5 5 0 009-3c0-5-4-8-10-11z"/></svg></div>
+<div><h2>أزواجه ﷺ</h2><p class="sub">لم يتزوج حتى ماتت خديجة</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-azwaj')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-azwaj')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<div class="grid2">
+<div class="kv"><b>١ •</b> سودة بنت زمعة (كانت قبله عند السكران بن عمرو)</div>
+<div class="kv"><b>٢ •</b> عائشة بنت الصديق — تزوجها بنت ست وبنى بها بنت تسع، وتوفي عنها وهي بنت ثماني عشرة</div>
+<div class="kv"><b>٣ •</b> حفصة بنت عمر رضي الله عنهما</div>
+<div class="kv"><b>٤ •</b> زينب بنت خزيمة الهلالية — أم المساكين (ماتت قبله)</div>
+<div class="kv"><b>٥ •</b> أم حبيبة بنت أبي سفيان — خطبها له النجاشي وأصدقها عنه ٤٠٠ دينار</div>
+<div class="kv"><b>٦ •</b> هند بنت أبي أمية — أم سلمة</div>
+<div class="kv"><b>٧ •</b> زينب بنت جحش — أم الحكم</div>
+<div class="kv"><b>٨ •</b> جويرية بنت الحارث الخزاعية</div>
+<div class="kv"><b>٩ •</b> صفية بنت حيي</div>
+<div class="kv"><b>١٠ •</b> ميمونة بنت الحارث الهلالية</div>
+</div>
+<p>فماتت قبله زينب بنت خزيمة، <b>ومات ﷺ عن التسع البواقي.</b> وكان تزوج أسماء بنت كعب الجونية فطلقها قبل الدخول، وعمرة بنت زيد الكلابية فطلقها قبل الدخول، وامرأة من غفار رأى بها بياضًا فقال: «الحقي بأهلك»، وتميمية قالت: أعوذ بالله منك، فقال: «منع الله عائذة، الحقي بأهلك». ويقال إن التي وهبت نفسها للنبي ﷺ: أم شريك.</p>
+</div></section>
+
+<!-- 7 -->
+<section class="card" id="s-umum" data-title="عمومته وعماته والعواتك والفواطم">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19h16M6 19V9l6-5 6 5v10"/></svg></div>
+<div><h2>عمومته وعماته</h2><p class="sub">بنو عبد المطلب والعواتك والفواطم</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-umum')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-umum')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<p>بنو عبد المطلب <b>عشرة:</b> الحارث (وبه كان يُكنى) والزبير وجحل وضرار والمقوِّم وأبو لهب والعباس وحمزة وأبو طالب وعبد الله. فعمومته تسعة، وأصغرهم سنًّا <b>العباس</b>.</p>
+<p>وعماته <b>ست:</b> أميمة وأم حكيم (وهي البيضاء) وبرّة وعاتكة وصفية وأروى بنات عبد المطلب.</p>
+<div class="quote"><b>العواتك اللاتي ولدنه:</b> عاتكة بنت هلال (أم عبد مناف بن قصي) • وعاتكة بنت مرة بن هلال (أم هاشم بن عبد مناف) • وعاتكة بنت الأونص (أم وهب بن عبد مناف أبي آمنة).<br><b>الفواطم:</b> فاطمة بنت سعد (أم قصي) • وفاطمة بنت عمرو (أم أسد بن هاشم) • وفاطمة بنت أسد (أم علي، وأمها فاطمة بنت هدم) • وفاطمة بنت رسول الله ﷺ.</div>
+</div></section>
+
+<!-- 8 -->
+<section class="card" id="s-mawali" data-title="مواليه وخدمه ﷺ">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 8a5 5 0 10-10 0c0 2 1 3.5 2.5 4.5L7 20h10l-2.5-7.5C16 11.5 17 10 17 8z"/></svg></div>
+<div><h2>مواليه وخدمه ﷺ</h2><p class="sub">من الأحرار والموالي</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-mawali')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-mawali')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<div class="grid2">
+<div class="kv">زيد بن حارثة • بركة • أسلم • أبو كبيشة • أنسة • ثوبان • شقران (صالح) • يسار • فضالة • أبو مويهبة • رافع • سفينة</div>
+<div class="kv">من النساء: <b>أم أيمن</b> (حاضنته وزوج زيد، أم أسامة) • رضوى • مارية • ركانة</div>
+</div>
+<p>وخدمه من الأحرار: <b>أنس بن مالك</b>، وهند وأسماء ابنا حارثة الأسلميان.</p>
+</div></section>
+
+<!-- 9 -->
+<section class="card" id="s-biatha" data-title="بعثته وحصاره ﷺ">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg></div>
+<div><h2>بعثته وحصاره ﷺ</h2><p class="sub">أربعون سنة ويوم.. بشيرًا ونذيرًا</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-biatha')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-biatha')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<div class="aya">﴿ يَا أَيُّهَا الرَّسُولُ بَلِّغْ مَا أُنزِلَ إِلَيْكَ مِن رَّبِّكَ ﴾ [المائدة: ٦٧]</div>
+<p>فلما أتت له <b>أربعون سنة ويوم</b> بعثه الله إلى الناس كافة بشيرًا ونذيرًا، فصدع بأمر الله وبلّغ الرسالات ونصح الأمة، فشنّع القوم له حتى <b>حاصروه وأهله في الشعب</b>. وكان الحصار وله ﷺ تسع وأربعون سنة، وذلك عند خروجه منه.</p>
+</div></section>
+
+<!-- 10 -->
+<section class="card" id="s-huzn" data-title="عام الحزن والإسراء">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14a8 8 0 10-12 0l-3 4 4-1 3 2 3-2 4 1z"/></svg></div>
+<div><h2>عام الحزن والإسراء</h2><p class="sub">وفاة العم والزوجة ثم التكريم العلوي</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-huzn')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-huzn')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<ul class="clean">
+<li><span class="badge">٤٩</span><span>لما أتت له تسع وأربعون سنة وثمانية أشهر وأحد عشر يومًا <b>مات عمه أبو طالب، وماتت خديجة بعده بثلاثة أيام.</b></span></li>
+<li><span class="badge">٥٠</span><span>لما أتت له خمسون سنة وثلاثة أشهر <b>قدم عليه جنّ نصيبين فأسلموا.</b></span></li>
+<li><span class="badge">٥١</span><span>لما أتت له إحدى وخمسون سنة وتسعة أشهر <b>أُسري به من بين زمزم والمقام إلى بيت المقدس</b> ثم عُرج به إلى السماء.</span></li>
+</ul>
+<div class="img-deco"><svg viewBox="0 0 100 80" width="90" height="70"><g fill="none" stroke="#0f6e5a" stroke-width="2"><path d="M10 60 Q50 0 90 60"/><circle cx="50" cy="22" r="8"/><path d="M20 60h60"/></g></svg><div>رحلة الإسراء: من المسجد الحرام إلى المسجد الأقصى — تكريم وتثبيت بعد الحزن والحصار.</div></div>
+</div></section>
+
+<!-- 11 -->
+<section class="card" id="s-hijra" data-title="هجرته ﷺ إلى المدينة">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h13M12 5l7 7-7 7M21 5v14"/></svg></div>
+<div><h2>هجرته ﷺ</h2><p class="sub">يوم الاثنين لثمان خلون من ربيع الأول</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-hijra')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-hijra')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<p>فلما أتت له <b>ثلاث وخمسون سنة</b> هاجر من مكة إلى المدينة هو و<b>أبو بكر</b> وعامر بن فهيرة مولى أبي بكر، ودليلهم عبد الله بن أريقط الليثي. وكانت هجرته <b>يوم الاثنين لثمان خلون من ربيع الأول</b>.</p>
+<ul class="clean">
+<li><span class="badge">🌙</span><span>فيها ابتنى بعائشة رضي الله عنها.</span></li>
+<li><span class="badge">٨</span><span>لما أتت لهجرته ثمانية أشهر <b>آخى بين المهاجرين والأنصار.</b></span></li>
+<li><span class="badge">٩</span><span>لما أتت لهجرته تسعة أشهر وعشرة أيام <b>دخل بعائشة.</b></span></li>
+<li><span class="badge">١٢</span><span>لما أتت لهجرته سنة وشهر واثنان وعشرون يومًا <b>زوّج عليًّا فاطمة</b> رضي الله عنهما.</span></li>
+</ul>
+</div></section>
+
+<!-- 12 -->
+<section class="card" id="s-ghazawat" data-title="غزواته ﷺ">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20L12 4l8 16M8 13h8"/></svg></div>
+<div><h2>غزواته ﷺ</h2><p class="sub">تسع عشرة غزوة — خط زمني من الهجرة</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-ghazawat')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-ghazawat')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<div class="timeline">
+<div class="t-item"><h4>غزوة ودّان / الأبواء</h4><p>لهجرته سنة وشهران وعشرة أيام — أول غزواته ﷺ.</p></div>
+<div class="t-item"><h4>طلب عير قريش وكرز بن جابر</h4><p>لهجرته سنة وثلاثة أشهر وثلاثة عشر يومًا — خرج في طلب عير فيها أمية بن خلف، ثم في طلب كرز بعد عشرين يومًا.</p></div>
+<div class="t-item"><h4>بدر الكبرى — يوم الفرقان ⚔️</h4><p>لهجرته سنة وثمانية أشهر وسبعة عشر يومًا، لسبع عشرة ليلة من رمضان. أصحابه ٣١٣ والمشركون بين ٩٠٠ وألف.</p><div class="aya">﴿ وَلَقَدْ نَصَرَكُمُ اللَّهُ بِبَدْرٍ وَأَنتُمْ أَذِلَّةٌ ﴾ [آل عمران: ١٢٣]</div></div>
+<div class="t-item"><h4>بنو قينقاع ثم السويق ثم بنو سليم بالكديد</h4><p>تتابع الغزو بعد بدر: إجلاء قينقاع، وطلب أبي سفيان في السويق، وغزوة الكديد.</p></div>
+<div class="t-item"><h4>ذو أمر (غطفان) ثم أُحد</h4><p>غزوة ذي أمر، ثم كانت <b>أُحد في السنة الثالثة.</b></p></div>
+<div class="t-item"><h4>بنو النضير ثم ذات الرقاع</h4><p>على رأس سنتين وتسعة أشهر وعشرة أيام غزوة النضير، وبعد شهرين وعشرين يومًا <b>ذات الرقاع — وفيها صلى صلاة الخوف.</b></p></div>
+<div class="t-item"><h4>دومة الجندل ثم بنو المصطلق</h4><p>بعد شهرين وأربعة أيام دومة الجندل، وبعد خمسة أشهر وثلاثة أيام بنو المصطلق — وهي التي قال فيها أهل الإفك ما قالوا.</p></div>
+<div class="t-item"><h4>الخندق ثم بنو قريظة</h4><p>مضى من الهجرة أربع سنين وعشرة أشهر وخمسة أيام يوم الخندق، ثم بنو قريظة بعد تسعة عشر يومًا.</p></div>
+<div class="t-item"><h4>بنو لحيان ثم الغابة ثم الحديبية</h4><p>بعد ثلاثة أشهر بنو لحيان، ثم الغابة سنة ست، ثم <b>عمرة الحديبية سنة ست.</b></p></div>
+<div class="t-item"><h4>خيبر ثم عمرة القضية</h4><p>لهجرته ست سنين وثلاثة أشهر وإحدى وعشرون يومًا غزوة خيبر، ثم عمرة القضية بعد ستة أشهر وعشرة أيام.</p></div>
+<div class="t-item"><h4>فتح مكة ثم حنين ثم الطائف 🕋</h4><p>مضى من هجرته سبع سنين وثمانية أشهر وأحد عشر يومًا يوم الفتح، وغزا حنينًا بعد يوم، ثم الطائف في سنتها.</p></div>
+<div class="t-item"><h4>تبوك وحجة أبي بكر</h4><p>لهجرته ثماني سنين وستة أشهر وخمسة أيام غزوة تبوك، وفيها حج أبو بكر بالناس وقرأ عليهم عليٌّ سورة براءة.</p></div>
+<div class="t-item"><h4>حجة الوداع 🕊️</h4><p>لهجرته تسع سنين وأحد عشر شهرًا وعشرة أيام حج ﷺ حجة الوداع.</p></div>
+</div>
+<div class="quote">سأل أبو إسحاق زيدَ بن أرقم: كم غزا رسول الله ﷺ؟ قال: <b>تسع عشرة غزوة، وغزوت معه سبع عشرة وسبقني بغزاتين.</b></div>
+</div></section>
+
+<!-- 13 -->
+<section class="card" id="s-wafat" data-title="وفاته ﷺ ورفقاؤه">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v5l3 2M12 22a10 10 0 110-20 10 10 0 010 20z"/></svg></div>
+<div><h2>وفاته ﷺ ورفقاؤه</h2><p class="sub">عشر سنين وشهرين من الهجرة.. ٦٣ عامًا</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-wafat')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-wafat')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<div class="aya">تُوفّي رسول الله ﷺ لما أتى لهجرته <b>عشر سنين وشهران</b> — وقد بلغ من السنين <b>ثلاثًا وستين سنة.</b> ﷺ</div>
+<p><b>رفقاؤه النجباء:</b> علي وابناه (الحسن والحسين) • حمزة • جعفر • أبو بكر • عمر • أبو ذر • المقداد • سلمان • حذيفة • ابن مسعود • عمار بن ياسر • بلال رضي الله عنهم.</p>
+<p>وممن كان يضرب أعناق الكفار بين يديه: علي والزبير ومحمد بن مسلمة وعاصم بن ثابت والمقداد.</p>
+<p><b>حرسه ﷺ:</b> يوم بدر سعد بن معاذ (حين نام في العريش) • بأُحد محمد بن مسلمة • يوم الخندق الزبير • وكان عباد بن بشر يحرسه • وسعد بن أبي وقاص • ويوم خيبر أبو أيوب الأنصاري • بوادي القرى بلال. فلما نزلت ﴿ وَاللَّهُ يَعْصِمُكَ مِنَ النَّاسِ ﴾ <b>ترك الحرس.</b></p>
+</div></section>
+
+<!-- 14 -->
+<section class="card" id="s-silah" data-title="سلاحه ودوابه ومتاعه ﷺ">
+<div class="card-head"><div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l6-6M14 4l6 6-9 9H5z"/></svg></div>
+<div><h2>سلاحه ودوابه ومتاعه ﷺ</h2><p class="sub">زهد النبوة: سيف ودرع ومصحف ومسواك</p></div>
+<div class="card-actions"><button class="mini" onclick="shareSection('s-silah')" title="مشاركة">📤</button><button class="mini" onclick="copySection('s-silah')" title="نسخ">📋</button></div></div>
+<div class="card-body">
+<div class="grid2">
+<div class="kv"><b>السيوف (٨):</b> ذو الفقار (غنمه يوم بدر) • سيف ورثه عن أبيه • الغضب (أهداه سعد بن عبادة) • سيف قلعي من قينقاع • البتار والحنف • المخذم والرسوب</div>
+<div class="kv"><b>الرماح والقسي:</b> ٣ أرماح من قينقاع + المثني • عنزة • محجن ومخصرة (العرجون) • قضيب المعشوق • قسي: الروحاء والبيضاء والصحراء والكتوم • الجعبة: الكافور</div>
+<div class="kv"><b>الدروع والمغفر:</b> ذات الفضول + درعان من قينقاع (السغدية) • ويقال درع داود التي قتل فيها جالوت • مغفر السبوغ • راية سوداء (العقاب) • ترس أذهب الله تمثال العقاب عنه</div>
+<div class="kv"><b>الدواب:</b> أفراس: الورد (هدية تميم الداري) والظرب والسكب (أول فرس) والمرتجز • بغلة الدلدل (أول بغلة في الإسلام) • حمار عفير • نوق: الغضباء والقصواء ومروة • لقحة البغوم • ١٠٠ من الغنم</div>
+</div>
+<ul class="clean">
+<li><span class="badge">🧥</span><span>ترك يوم مات: ثوبي حبرة، إزارًا عمانيًّا، ثوبين صحاريين، قميصًا سحوليًّا، جبة يمنية، خميصة، كساءً أبيض، ٤ قلانس، إزارًا طوله خمسة أشبار، وملحفة مورّسة. وكان يلبس يوم الجمعة <b>برده الأحمر ويعتمّ.</b></span></li>
+<li><span class="badge">🪞</span><span>ربعة فيها مرآة ومشط عاج ومكحلة ومقراض ومسواك • قدح مضبب بفضة • تور المخضب • مخضب من شبه • قدح زجاج • مغسل صفر وقصعة • سرير قطيفة.</span></li>
+<li><span class="badge">💍</span><span>خاتم حديد ملوي بفضة نقشه <b>«محمد رسول الله»</b> • خفان ساذجان أهداهما النجاشي فلبسهما ﷺ. وكان يتبخر بالعود ويطرح معه الكافور، ويقول: «عليكم بالعود الهندي فإن فيه سبعة أشفية» و«أطيب الطيب المسك».</span></li>
+</ul>
+<div class="orn">۞ ۞ ۞</div>
+<div class="quote">فهذا أوجز ما أُملي من حديث مولده ومبعثه وأحواله ﷺ — <b>وشرَّف وكرَّم وعظَّم، وحشرنا في زمرته.</b></div>
+</div></section>
+
+<div class="footer">إعداد محب للسيرة من كتاب «أوجز السير لخير البشر» لابن فارس • الخط الأميري • صلّوا عليه وسلّموا تسليمًا ﷺ<br><span style="font-size:.9rem">آخر قراءة تُحفظ تلقائيًا • انسخ أي لوحة أو شاركها لتعم الفائدة</span></div>
+
+</main>
+</div>
+</div>
+
+<div class="fab"><button onclick="window.scrollTo({top:0,behavior:'smooth'})" title="للأعلى">↑</button><button onclick="sharePage()" title="مشاركة">📤</button></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const root=document.documentElement;
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),2200)}
+// themes
+const dots=document.querySelectorAll('[data-set-theme]');
+function setTheme(n){root.setAttribute('data-theme',n);localStorage.setItem('sira-theme',n);dots.forEach(d=>d.classList.toggle('active',d.dataset.setTheme===n))}
+dots.forEach(d=>d.onclick=()=>{setTheme(d.dataset.setTheme);toast('تم تغيير الثيم')});
+setTheme(localStorage.getItem('sira-theme')||'sand');
+// font size
+let fs=parseFloat(localStorage.getItem('sira-fs')||19);
+function applyFs(){root.style.setProperty('--fs',fs+'px');localStorage.setItem('sira-fs',fs)}
+document.getElementById('fontPlus').onclick=()=>{fs=Math.min(28,fs+1);applyFs()};
+document.getElementById('fontMinus').onclick=()=>{fs=Math.max(14,fs-1);applyFs()};
+document.getElementById('resetFont').onclick=()=>{fs=19;applyFs();toast('حجم الخط الافتراضي')};
+applyFs();
+// nasab tree
+const nasab=['محمد ﷺ','عبد الله','عبد المطلب','هاشم','عبد مناف','قصي','كلاب','مرة','كعب','لؤي','غالب','فهر','مالك','النضر','كنانة','خزيمة','مدركة','إلياس','مضر','نزار','معد','عدنان'];
+document.getElementById('nasabTree').innerHTML=nasab.map((n,i)=>`<span>${n}</span>${i<nasab.length-1?'<i>◀</i>':''}`).join('');
+// toc
+const cards=[...document.querySelectorAll('section.card')];
+const toc=document.getElementById('tocLinks');
+toc.innerHTML=cards.map((c,i)=>`<a href="#${c.id}" data-t="${c.id}"><span class="num">${i+1}</span><span>${c.dataset.title}</span></a>`).join('');
+const links=[...toc.querySelectorAll('a')];
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('active',l.dataset.t===e.target.id));localStorage.setItem('sira-last',e.target.id)}})},{rootMargin:'-30% 0px -55% 0px'});
+cards.forEach(c=>io.observe(c));
+// reveal
+const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.06});
+cards.forEach(c=>io2.observe(c));
+// progress
+addEventListener('scroll',()=>{const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('progress').style.width=p+'%'},{passive:true});
+// share / copy
+function secText(id){const el=document.getElementById(id);return '【'+el.dataset.title+' — من أوجز السير لخير البشر ﷺ】\n'+el.innerText.trim().slice(0,1200)+'\n'+location.href.split('#')[0]+'#'+id}
+function shareSection(id){
+ const data={title:document.getElementById(id).dataset.title,text:secText(id),url:location.href.split('#')[0]+'#'+id};
+ if(navigator.share){navigator.share(data).catch(()=>{})}
+ else{navigator.clipboard.writeText(data.text).then(()=>toast('نُسخ النص — الصقه حيث تشاء'));window.open('https://wa.me/?text='+encodeURIComponent(data.text),'_blank')}
+}
+function copySection(id){navigator.clipboard.writeText(secText(id)).then(()=>toast('تم نسخ اللوحة 📋'))}
+function sharePage(){
+ const data={title:document.title,text:'أوجز السير لخير البشر ﷺ لابن فارس — موقع جميل بخط أميري',url:location.href};
+ if(navigator.share)navigator.share(data).catch(()=>{});
+ else{navigator.clipboard.writeText(data.text+' '+data.url).then(()=>toast('نُسخ رابط الموقع'))}
+}
+// search
+function doSearch(){
+ const q=document.getElementById('search').value.trim();
+ cards.forEach(c=>c.classList.remove('hidden'));
+ document.querySelectorAll('mark').forEach(m=>m.replaceWith(document.createTextNode(m.textContent)));
+ if(!q)return;
+ let found=0;
+ cards.forEach(c=>{
+  const body=c.querySelector('.card-body');
+  if(c.innerText.includes(q)){found++;
+   // highlight
+   const walker=document.createTreeWalker(body,NodeFilter.SHOW_TEXT);
+   const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+   nodes.forEach(n=>{const i=n.nodeValue.indexOf(q);if(i>-1&&n.parentNode.tagName!=='MARK'){const r=n.splitText(i);const m=document.createElement('mark');m.textContent=q;r.replaceData(0,q.length,'');r.parentNode.insertBefore(m,r)}});
+  } else c.classList.add('hidden');
+ });
+ toast(found?('وجدنا '+found+' لوحة فيها «'+q+'»'):'لا نتائج — جرّب كلمة أخرى');
+ if(found===1){const v=cards.find(c=>!c.classList.contains('hidden'));v.scrollIntoView({behavior:'smooth'})}
+}
+document.getElementById('search').addEventListener('input',e=>{if(!e.target.value)cards.forEach(c=>c.classList.remove('hidden'))});
+document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch()});
+// restore last
+const last=localStorage.getItem('sira-last');if(last&&document.getElementById(last))setTimeout(()=>document.getElementById(last).scrollIntoView({block:'start'}),600);
+</script>
+</body>
+</html>
