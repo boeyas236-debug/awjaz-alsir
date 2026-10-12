@@ -106,6 +106,8 @@ html[data-theme="night"] .hero{background:linear-gradient(135deg,#1e1b4b,#1e40af
 .searchbox input{flex:1;min-width:0;border:none;outline:none;font-family:inherit;font-size:1.05rem;padding:8px 16px;background:transparent;color:#222}
 .searchbox button{border:none;border-radius:999px;padding:8px 22px;background:#111;color:#fff;font-family:inherit;cursor:pointer}
 .layout{display:grid;grid-template-columns:280px 1fr;gap:22px;align-items:start;padding-bottom:60px}
+.layout>*{min-width:0;max-width:100%}
+main{min-width:0;max-width:100%;overflow-x:clip}
 @media(max-width:900px){.layout{grid-template-columns:1fr}}
 .toc{position:sticky;top:82px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
 .toc-toggle{display:none;width:100%;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:14px;padding:12px 14px;font-weight:800;font-size:1.05rem;cursor:pointer;align-items:center;justify-content:space-between;gap:8px}
@@ -141,7 +143,7 @@ ul.clean li>*{min-width:0}
 ul.clean{list-style:none;padding:0;margin:10px 0}
 ul.clean li{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:10px 14px;margin:8px 0;display:flex;gap:10px;align-items:flex-start}
 .badge{background:var(--gold);color:#fff;min-width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-weight:700;flex:0 0 32px}
-.nasab{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.nasab{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;max-width:100%}
 .nasab span{background:var(--chip);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;font-weight:700;white-space:nowrap}
 .nasab i{color:var(--gold);align-self:center}
 .timeline{position:relative;margin:14px 8px 6px;padding-inline-start:30px;border-inline-start:3px dotted var(--gold)}
