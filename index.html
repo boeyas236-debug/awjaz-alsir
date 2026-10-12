@@ -7,12 +7,14 @@
 <meta name="description" content="عرض بديع لكتاب أوجز السير لخير البشر لابن فارس: نسب النبي ﷺ ومولده ونشأته وبعثته وهجرته وغزواته ووفاته">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --fs:19px;
   --radius:20px;
   --shadow:0 10px 30px rgba(0,0,0,.10);
+  --font-body:"Amiri","Traditional Arabic","Simplified Arabic",serif;
+  --font-head:"Cairo","Amiri","Traditional Arabic",sans-serif;
 }
 html[data-theme="sand"]{
   --bg:#faf6ee; --bg2:#fffdf7; --card:#ffffff; --ink:#2b2419; --muted:#7a6c55;
@@ -41,26 +43,30 @@ html[data-theme="dark"]{
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  margin:0; font-family:"Amiri","Traditional Arabic",serif;
+  margin:0; font-family:var(--font-body);
   font-size:var(--fs); line-height:2.05; color:var(--ink); background:var(--bg);
   transition:background .4s,color .4s;
+  overflow-x:clip;
 }
+img,svg{max-width:100%}
+button{font-family:inherit;-webkit-tap-highlight-color:transparent}
 a{color:inherit}
 .top-progress{position:fixed;top:0;right:0;left:0;height:5px;background:transparent;z-index:100}
 .top-progress span{display:block;height:100%;width:0;background:linear-gradient(-90deg,var(--gold2),var(--gold),var(--accent));}
 header.sticky{
   position:sticky;top:0;z-index:50;
+  background:var(--bg2);
   background:color-mix(in srgb, var(--bg2) 88%, transparent);
-  backdrop-filter:blur(12px); border-bottom:1px solid var(--line);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px); border-bottom:1px solid var(--line);
 }
 .wrap{max-width:1080px;margin:auto;padding:0 18px}
 .bar{display:flex;align-items:center;gap:12px;padding:12px 0;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:12px}
 .logo-mark{
-  width:48px;height:48px;border-radius:16px;display:grid;place-items:center;color:#fff;font-weight:700;
-  background:linear-gradient(135deg,var(--hero1),var(--hero2));box-shadow:var(--shadow);font-family:"Aref Ruqaa",serif;font-size:26px
+  width:48px;height:48px;border-radius:16px;display:grid;place-items:center;color:#fff;font-weight:800;
+  background:linear-gradient(135deg,var(--hero1),var(--hero2));box-shadow:var(--shadow);font-family:var(--font-head);font-size:26px
 }
-.logo b{font-family:"Aref Ruqaa",serif;font-size:1.15rem;display:block;line-height:1.3}
+.logo b{font-family:var(--font-head);font-weight:800;font-size:1.05rem;display:block;line-height:1.5}
 .logo small{color:var(--muted);font-size:.85rem}
 .controls{margin-inline-start:auto;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .btn{
@@ -87,8 +93,8 @@ html[data-theme="night"] .hero{background:linear-gradient(135deg,#1e1b4b,#1e40af
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='white' stroke-width='1.2'%3E%3Cpath d='M60 8 72 48 112 60 72 72 60 112 48 72 8 60 48 48Z'/%3E%3Ccircle cx='60' cy='60' r='10'/%3E%3C/g%3E%3C/svg%3E");
 }
 .hero>*{position:relative}
-.basmala{font-family:"Aref Ruqaa",serif;font-size:1.6rem;color:#ffe9a8}
-.hero h1{font-family:"Aref Ruqaa",serif;font-size:clamp(2rem,5vw,3.3rem);margin:10px 0 6px;line-height:1.5}
+.basmala{font-family:var(--font-head);font-weight:700;font-size:1.25rem;color:#ffe9a8}
+.hero h1{font-family:var(--font-head);font-weight:900;font-size:clamp(1.5rem,5vw,3rem);margin:10px 0 6px;line-height:1.7}
 .hero p{max-width:760px;margin:8px auto;color:#f5f0dd;font-size:1.12rem}
 .hero-meta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
 .pill{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px);border-radius:999px;padding:6px 16px;font-size:.95rem}
@@ -98,7 +104,11 @@ html[data-theme="night"] .hero{background:linear-gradient(135deg,#1e1b4b,#1e40af
 .layout{display:grid;grid-template-columns:280px 1fr;gap:22px;align-items:start;padding-bottom:60px}
 @media(max-width:900px){.layout{grid-template-columns:1fr}}
 .toc{position:sticky;top:82px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
-.toc h3{margin:0 0 10px;font-family:"Aref Ruqaa",serif;color:var(--gold)}
+.toc-toggle{display:none;width:100%;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:14px;padding:12px 14px;font-weight:800;font-size:1.05rem;cursor:pointer;align-items:center;justify-content:space-between;gap:8px}
+.toc-toggle .chev{transition:.3s;color:var(--gold);font-size:1.2rem}
+.toc.open .toc-toggle .chev{transform:rotate(180deg)}
+.toc h3{margin:0 0 10px;font-family:var(--font-head);font-weight:800;color:var(--gold)}
+#tocLinks{display:grid;gap:2px}
 .toc a{display:flex;gap:8px;align-items:center;text-decoration:none;padding:8px 10px;border-radius:12px;font-size:1rem;line-height:1.7}
 .toc a:hover{background:var(--chip)}
 .toc a.active{background:var(--accent2);border:1px solid var(--line);font-weight:700}
@@ -111,7 +121,7 @@ section.card.visible{opacity:1;transform:none}
 .card-head{display:flex;gap:14px;align-items:center;padding:20px 22px 14px;border-bottom:2px dashed var(--line);background:linear-gradient(180deg,var(--chip),transparent)}
 .card-ico{width:58px;height:58px;flex:0 0 58px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#fff}
 .card-ico svg{width:30px;height:30px}
-.card-head h2{margin:0;font-family:"Aref Ruqaa",serif;font-size:1.55rem;line-height:1.6}
+.card-head h2{margin:0;font-family:var(--font-head);font-weight:800;font-size:1.3rem;line-height:1.7}
 .card-head .sub{color:var(--muted);font-size:.92rem;margin:0}
 .card-actions{margin-inline-start:auto;display:flex;gap:7px}
 .mini{width:38px;height:38px;border-radius:12px;border:1px solid var(--line);background:var(--bg2);cursor:pointer;display:grid;place-items:center;font-size:1.05rem;transition:.2s}
@@ -146,7 +156,70 @@ mark{background:var(--gold2);border-radius:4px;padding:0 4px}
 .hidden{display:none!important}
 .img-deco{border-radius:18px;overflow:hidden;border:1px solid var(--line);margin:12px 0;background:linear-gradient(135deg,var(--accent2),var(--chip));padding:18px;display:flex;gap:14px;align-items:center}
 .img-deco svg{flex:0 0 72px}
-@media print{.controls,.toc,.fab,.top-progress,.card-actions,.searchbox{display:none!important}body{background:#fff}.layout{grid-template-columns:1fr}}
+@media print{.controls,.toc,.fab,.top-progress,.card-actions,.searchbox,.toc-toggle{display:none!important}body{background:#fff}.layout{grid-template-columns:1fr}}
+/* ===== تحسينات الجوال ===== */
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr;gap:14px}
+  .toc{position:static;padding:12px}
+  .toc-toggle{display:flex;font-family:var(--font-head)}
+  .toc h3{display:none}
+  #tocLinks{display:none;margin-top:10px;grid-template-columns:1fr 1fr;gap:6px;max-height:46vh;overflow:auto}
+  .toc.open #tocLinks{display:grid}
+  .toc a{font-size:.92rem;padding:9px 8px;border:1px solid var(--line);background:var(--bg2)}
+  .toc .num{min-width:26px;height:26px;font-size:.8rem}
+  .toc-actions{display:none!important}
+  .toc.open .toc-actions{display:flex!important}
+  section.card{scroll-margin-top:150px}
+}
+@media(max-width:640px){
+  :root{--fs:17px}
+  body{line-height:1.95}
+  .wrap{padding:0 12px}
+  .bar{gap:8px;padding:8px 0}
+  .logo-mark{width:40px;height:40px;font-size:22px;border-radius:13px}
+  .logo b{font-size:.92rem}
+  .logo small{font-size:.75rem}
+  .controls{width:100%;margin-inline-start:0;flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+  .controls::-webkit-scrollbar{display:none}
+  .btn{padding:8px 12px;font-size:.85rem;white-space:nowrap;min-height:42px}
+  .theme-dots{white-space:nowrap;flex:0 0 auto}
+  .theme-dots .lbl{display:none}
+  .dot{width:30px;height:30px}
+  .hero{border-radius:20px;margin:12px auto;padding:30px 16px 24px}
+  .hero h1{line-height:1.9}
+  .hero p{font-size:1rem;line-height:1.9}
+  .pill{font-size:.82rem;padding:5px 12px}
+  .searchbox{flex-direction:column;border-radius:20px;padding:8px}
+  .searchbox input{width:100%;padding:10px 12px;font-size:1rem;min-height:44px}
+  .searchbox button{width:100%;padding:11px;min-height:44px;font-size:1rem;font-weight:700}
+  #tocLinks{grid-template-columns:1fr}
+  .card-head{flex-wrap:wrap;gap:10px;padding:14px 14px 10px}
+  .card-ico{width:44px;height:44px;flex-basis:44px;border-radius:14px}
+  .card-ico svg{width:24px;height:24px}
+  .card-head h2{font-size:1.12rem;flex:1 1 60%}
+  .card-head .sub{font-size:.82rem}
+  .card-actions{margin-inline-start:0;width:100%;justify-content:flex-end}
+  .mini{width:44px;height:44px;font-size:1.15rem}
+  .card-body{padding:6px 14px 16px}
+  .card-body p{text-align:right;word-break:break-word}
+  .quote{padding:12px 14px;font-size:.98rem}
+  ul.clean li{padding:9px 10px;font-size:.95rem}
+  .nasab{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}
+  .nasab span{flex:0 0 auto;font-size:.88rem}
+  .timeline{padding-inline-start:20px;margin:12px 2px 4px}
+  .t-item{padding:10px 12px}
+  .t-item::before{inset-inline-start:-28px}
+  .img-deco{flex-direction:column;text-align:center;padding:14px}
+  .aya{font-size:1.02rem;padding:12px}
+  .fab{bottom:calc(14px + env(safe-area-inset-bottom));inset-inline-start:14px}
+  .fab button{width:52px;height:52px}
+  .toast{max-width:92vw;text-align:center;white-space:normal}
+}
+@media(max-width:380px){
+  :root{--fs:16px}
+  .logo small{display:none}
+  .hero{padding:24px 12px 20px}
+}
 </style>
 </head>
 <body>
@@ -156,7 +229,7 @@ mark{background:var(--gold2);border-radius:4px;padding:0 4px}
   <div class="logo"><div class="logo-mark">م</div><div><b>أوجز السير لخير البشر ﷺ</b><small>للإمام ابن فارس • عرض موثّق ميسّر</small></div></div>
   <div class="controls">
     <div class="theme-dots" title="لون الثيم">
-      <span style="font-size:.85rem;color:var(--muted)">الثيم:</span>
+      <span class="lbl" style="font-size:.85rem;color:var(--muted)">الثيم:</span>
       <span class="dot active" data-set-theme="sand" style="background:#e9c46a" title="رملي ذهبي"></span>
       <span class="dot" data-set-theme="emerald" style="background:#0f766e" title="زمردي"></span>
       <span class="dot" data-set-theme="night" style="background:#4f46e5" title="أزرق"></span>
@@ -184,9 +257,10 @@ mark{background:var(--gold2);border-radius:4px;padding:0 4px}
 
 <div class="layout">
 <nav class="toc" id="toc">
+<button class="toc-toggle" id="tocToggle" aria-expanded="false"><span>❖ فهرس السيرة <small id="tocCount" style="font-weight:500;color:var(--muted)"></small></span><span class="chev">▾</span></button>
 <h3>❖ فهرس السيرة</h3>
 <div id="tocLinks"></div>
-<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+<div class="toc-actions" style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
 <button class="btn gold" onclick="sharePage()">مشاركة الموقع</button>
 <button class="btn" onclick="window.print()">🖨 طباعة</button>
 </div>
@@ -421,11 +495,12 @@ function setTheme(n){root.setAttribute('data-theme',n);localStorage.setItem('sir
 dots.forEach(d=>d.onclick=()=>{setTheme(d.dataset.setTheme);toast('تم تغيير الثيم')});
 setTheme(localStorage.getItem('sira-theme')||'sand');
 // font size
-let fs=parseFloat(localStorage.getItem('sira-fs')||19);
+let fs=parseFloat(localStorage.getItem('sira-fs')||0);
+if(!fs)fs=(window.innerWidth<=640?17:19);
 function applyFs(){root.style.setProperty('--fs',fs+'px');localStorage.setItem('sira-fs',fs)}
 document.getElementById('fontPlus').onclick=()=>{fs=Math.min(28,fs+1);applyFs()};
 document.getElementById('fontMinus').onclick=()=>{fs=Math.max(14,fs-1);applyFs()};
-document.getElementById('resetFont').onclick=()=>{fs=19;applyFs();toast('حجم الخط الافتراضي')};
+document.getElementById('resetFont').onclick=()=>{fs=(window.innerWidth<=640?17:19);applyFs();toast('حجم الخط الافتراضي')};
 applyFs();
 // nasab tree
 const nasab=['محمد ﷺ','عبد الله','عبد المطلب','هاشم','عبد مناف','قصي','كلاب','مرة','كعب','لؤي','غالب','فهر','مالك','النضر','كنانة','خزيمة','مدركة','إلياس','مضر','نزار','معد','عدنان'];
@@ -434,6 +509,13 @@ document.getElementById('nasabTree').innerHTML=nasab.map((n,i)=>`<span>${n}</spa
 const cards=[...document.querySelectorAll('section.card')];
 const toc=document.getElementById('tocLinks');
 toc.innerHTML=cards.map((c,i)=>`<a href="#${c.id}" data-t="${c.id}"><span class="num">${i+1}</span><span>${c.dataset.title}</span></a>`).join('');
+document.getElementById('tocCount').textContent='• '+cards.length+' فصلًا';
+const tocNav=document.getElementById('toc'),tocToggle=document.getElementById('tocToggle');
+function isMobile(){return window.innerWidth<=900}
+if(!isMobile())tocNav.classList.add('open');
+tocToggle.onclick=()=>{const o=tocNav.classList.toggle('open');tocToggle.setAttribute('aria-expanded',o?'true':'false')};
+toc.addEventListener('click',e=>{if(e.target.closest('a')&&isMobile()){tocNav.classList.remove('open');tocToggle.setAttribute('aria-expanded','false')}});
+window.addEventListener('resize',()=>{if(!isMobile())tocNav.classList.add('open')});
 const links=[...toc.querySelectorAll('a')];
 const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('active',l.dataset.t===e.target.id));localStorage.setItem('sira-last',e.target.id)}})},{rootMargin:'-30% 0px -55% 0px'});
 cards.forEach(c=>io.observe(c));
