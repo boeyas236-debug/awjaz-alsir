@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>أوجز السير لخير البشر ﷺ | ابن فارس</title>
 <meta name="description" content="عرض بديع لكتاب أوجز السير لخير البشر لابن فارس: نسب النبي ﷺ ومولده ونشأته وبعثته وهجرته وغزواته ووفاته">
+<meta name="theme-color" content="#0f6e5a">
+<noscript><style>section.card{opacity:1!important;transform:none!important}</style></noscript>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
@@ -41,7 +43,8 @@ html[data-theme="dark"]{
   --pattern-opacity:.12; --shadow:0 10px 30px rgba(0,0,0,.5);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;max-width:100%}
+img,svg{max-width:100%;height:auto}
 body{
   margin:0; font-family:var(--font-body);
   font-size:var(--fs); line-height:2.05; color:var(--ink); background:var(--bg);
@@ -61,6 +64,7 @@ header.sticky{
 }
 .wrap{max-width:1080px;margin:auto;padding:0 18px}
 .bar{display:flex;align-items:center;gap:12px;padding:12px 0;flex-wrap:wrap}
+.bar>*{min-width:0}
 .logo{display:flex;align-items:center;gap:12px}
 .logo-mark{
   width:48px;height:48px;border-radius:16px;display:grid;place-items:center;color:#fff;font-weight:800;
@@ -99,7 +103,7 @@ html[data-theme="night"] .hero{background:linear-gradient(135deg,#1e1b4b,#1e40af
 .hero-meta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
 .pill{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px);border-radius:999px;padding:6px 16px;font-size:.95rem}
 .searchbox{max-width:640px;margin:18px auto 0;display:flex;background:#fff;border-radius:999px;padding:6px;gap:6px}
-.searchbox input{flex:1;border:none;outline:none;font-family:inherit;font-size:1.05rem;padding:8px 16px;background:transparent;color:#222}
+.searchbox input{flex:1;min-width:0;border:none;outline:none;font-family:inherit;font-size:1.05rem;padding:8px 16px;background:transparent;color:#222}
 .searchbox button{border:none;border-radius:999px;padding:8px 22px;background:#111;color:#fff;font-family:inherit;cursor:pointer}
 .layout{display:grid;grid-template-columns:280px 1fr;gap:22px;align-items:start;padding-bottom:60px}
 @media(max-width:900px){.layout{grid-template-columns:1fr}}
@@ -126,8 +130,11 @@ section.card.visible{opacity:1;transform:none}
 .card-actions{margin-inline-start:auto;display:flex;gap:7px}
 .mini{width:38px;height:38px;border-radius:12px;border:1px solid var(--line);background:var(--bg2);cursor:pointer;display:grid;place-items:center;font-size:1.05rem;transition:.2s}
 .mini:hover{border-color:var(--gold);transform:scale(1.06)}
-.card-body{padding:8px 24px 22px}
-.card-body p{margin:12px 0;text-align:justify}
+.card-body{padding:8px 24px 22px;min-width:0}
+.card-body p{margin:12px 0;text-align:justify;overflow-wrap:break-word}
+.card-head>div:nth-child(2){min-width:0;flex:1}
+ul.clean li>*{min-width:0}
+.img-deco>*{min-width:0}
 .quote{background:var(--accent2);border:1px solid var(--line);border-inline-start:5px solid var(--gold);border-radius:16px;padding:14px 18px;margin:14px 0}
 .orn{display:flex;align-items:center;gap:12px;color:var(--gold);justify-content:center;margin:6px 0}
 .orn::before,.orn::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
@@ -137,9 +144,9 @@ ul.clean li{background:var(--bg2);border:1px solid var(--line);border-radius:14p
 .nasab{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
 .nasab span{background:var(--chip);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;font-weight:700;white-space:nowrap}
 .nasab i{color:var(--gold);align-self:center}
-.timeline{position:relative;margin:14px 6px 6px;padding-inline-start:26px;border-inline-start:3px dotted var(--gold)}
-.t-item{position:relative;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:12px 16px;margin:0 0 12px}
-.t-item::before{content:"";position:absolute;inset-inline-start:-36px;top:16px;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px var(--chip)}
+.timeline{position:relative;margin:14px 8px 6px;padding-inline-start:30px;border-inline-start:3px dotted var(--gold)}
+.t-item{position:relative;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:12px 16px;margin:0 0 12px;min-width:0}
+.t-item::before{content:"";position:absolute;inset-inline-start:-32px;top:16px;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px var(--chip)}
 .t-item h4{margin:0 0 4px;font-size:1.1rem}
 .t-item p{margin:4px 0;font-size:1rem;color:var(--ink)}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -206,9 +213,9 @@ mark{background:var(--gold2);border-radius:4px;padding:0 4px}
   ul.clean li{padding:9px 10px;font-size:.95rem}
   .nasab{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}
   .nasab span{flex:0 0 auto;font-size:.88rem}
-  .timeline{padding-inline-start:20px;margin:12px 2px 4px}
+  .timeline{padding-inline-start:24px;margin:12px 4px 4px}
   .t-item{padding:10px 12px}
-  .t-item::before{inset-inline-start:-28px}
+  .t-item::before{inset-inline-start:-26px}
   .img-deco{flex-direction:column;text-align:center;padding:14px}
   .aya{font-size:1.02rem;padding:12px}
   .fab{bottom:calc(14px + env(safe-area-inset-bottom));inset-inline-start:14px}
@@ -488,16 +495,17 @@ mark{background:var(--gold2);border-radius:4px;padding:0 4px}
 
 <script>
 const root=document.documentElement;
+const store={get(k){try{return localStorage.getItem(k)}catch(_){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(_){}}};
 function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),2200)}
 // themes
 const dots=document.querySelectorAll('[data-set-theme]');
-function setTheme(n){root.setAttribute('data-theme',n);localStorage.setItem('sira-theme',n);dots.forEach(d=>d.classList.toggle('active',d.dataset.setTheme===n))}
+function setTheme(n){root.setAttribute('data-theme',n);store.set('sira-theme',n);dots.forEach(d=>d.classList.toggle('active',d.dataset.setTheme===n))}
 dots.forEach(d=>d.onclick=()=>{setTheme(d.dataset.setTheme);toast('تم تغيير الثيم')});
-setTheme(localStorage.getItem('sira-theme')||'sand');
+setTheme(store.get('sira-theme')||'sand');
 // font size
-let fs=parseFloat(localStorage.getItem('sira-fs')||0);
+let fs=parseFloat(store.get('sira-fs')||0);
 if(!fs)fs=(window.innerWidth<=640?17:19);
-function applyFs(){root.style.setProperty('--fs',fs+'px');localStorage.setItem('sira-fs',fs)}
+function applyFs(){root.style.setProperty('--fs',fs+'px');store.set('sira-fs',fs)}
 document.getElementById('fontPlus').onclick=()=>{fs=Math.min(28,fs+1);applyFs()};
 document.getElementById('fontMinus').onclick=()=>{fs=Math.max(14,fs-1);applyFs()};
 document.getElementById('resetFont').onclick=()=>{fs=(window.innerWidth<=640?17:19);applyFs();toast('حجم الخط الافتراضي')};
@@ -517,11 +525,12 @@ tocToggle.onclick=()=>{const o=tocNav.classList.toggle('open');tocToggle.setAttr
 toc.addEventListener('click',e=>{if(e.target.closest('a')&&isMobile()){tocNav.classList.remove('open');tocToggle.setAttribute('aria-expanded','false')}});
 window.addEventListener('resize',()=>{if(!isMobile())tocNav.classList.add('open')});
 const links=[...toc.querySelectorAll('a')];
-const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('active',l.dataset.t===e.target.id));localStorage.setItem('sira-last',e.target.id)}})},{rootMargin:'-30% 0px -55% 0px'});
-cards.forEach(c=>io.observe(c));
+if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('active',l.dataset.t===e.target.id));store.set('sira-last',e.target.id)}})},{rootMargin:'-30% 0px -55% 0px'});
+cards.forEach(c=>io.observe(c))}
 // reveal
-const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.06});
-cards.forEach(c=>io2.observe(c));
+if(!('IntersectionObserver' in window)){cards.forEach(c=>c.classList.add('visible'))}
+else{const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.06});
+cards.forEach(c=>io2.observe(c))}
 // progress
 addEventListener('scroll',()=>{const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('progress').style.width=p+'%'},{passive:true});
 // share / copy
@@ -558,8 +567,9 @@ function doSearch(){
 }
 document.getElementById('search').addEventListener('input',e=>{if(!e.target.value)cards.forEach(c=>c.classList.remove('hidden'))});
 document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch()});
-// restore last
-const last=localStorage.getItem('sira-last');if(last&&document.getElementById(last))setTimeout(()=>document.getElementById(last).scrollIntoView({block:'start'}),600);
+// restore last (desktop only, and never hijack a shared #link)
+const last=store.get('sira-last');
+if(last&&!location.hash&&window.innerWidth>900&&document.getElementById(last))setTimeout(()=>document.getElementById(last).scrollIntoView({block:'start'}),600);
 </script>
 </body>
 </html>
